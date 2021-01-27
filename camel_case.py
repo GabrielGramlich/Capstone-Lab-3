@@ -1,7 +1,16 @@
 def main():
+	display_banner()
 	sentence = get_sentence()
 	converted_sentence = convert_sentence(sentence)
 	print_converted_sentence(converted_sentence)
+
+
+def display_banner():
+	""" Display program name in banner """
+	# This code was written by Clara James
+	msg = 'AWSOME camelCaseGenerator PROGRAM'
+	stars = '*' * len(msg)
+	print(f'\n {stars} \n {msg} \n {stars}\n')
 
 
 def get_sentence():
